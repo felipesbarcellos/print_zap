@@ -11,8 +11,6 @@ def run() -> None:
     GEMINI_KEY = os.environ.get("GEMINI_KEY")
     client = genai.Client(api_key=GEMINI_KEY)
 
-    image_list = []
-
     for file in glob.glob('Pendente/*.png'):
         myfile = client.files.upload(file=file)
 
