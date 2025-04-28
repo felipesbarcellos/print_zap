@@ -1,6 +1,7 @@
 numeros.txt
+.env
 
-Pendente/*
-Tratado/*
+Pendente/*.png
+Tratado/*.png
 venv
 __pycache__
