@@ -10,4 +10,4 @@ Ferramenta de RPA para tirar Screenshots de listas de contatos de grupos no what
 6. Abra a página com os contatos
 7. Inicie o programa com `python ./main.py` no terminal
 8. Após terminar a raspagem, as screenshots estarão na pasta Pendente;
-9. Ainda no terminal digite `python ./gemini.py` para executar o ORM e salvar a lista em output.txt
+9. Ainda no terminal digite `python ./gemini.py` para executar o OCR e salvar a lista em output.txt
