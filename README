@@ -1,12 +1,13 @@
 # PrintContatosWhatsapp
 ## Sobre
-Ferramenta de RPA para tirar Screenshots de listas de contatos de grupos no whatsapp
+Ferramenta de RPA para tirar Screenshots de listas de contatos de grupos no whatsapp e transformar em lista de números de telefone utilizando o recurso de ORM do Gemini.
 ## Modo de uso
 1. Dê um pull no repositório ou baixe e extraia o arquivo compactado;
 2. Certifique-se de ter o python instalado.
 3. Instale as dependências do projeto com `pip install -r requirements.txt`
-4. Coloque a área a ser escaneada e o nome do grupo no arquivo configuracoes.json. Para isso ache a coordenada em pixel da tela onde começa a caixa de contatos em "left" e "top" e coloque a largura e altura da caixa de contatos em "width" e "height" respectivamente (eu usei o GreenShot para fazer isso).
-    ![[exemplo_left_top.png]]![[exemplo_width_height.png]]
-3. Abra a página com os contatos
-   ![[Bodega_901-Grupo_3_178_2025-04-26 204558.481507.png]]
-4. Inicie o programa com `python ./main.py` no terminal
+4. No arquivo .env coloque a sua chave da API do Gemini; 
+5. Coloque a área a ser escaneada e o nome do grupo no arquivo configuracoes.json. Para isso ache a coordenada em pixel da tela onde começa a caixa de contatos em "left" e "top" e coloque a largura e altura da caixa de contatos em "width" e "height" respectivamente (eu usei o GreenShot para fazer isso).
+6. Abra a página com os contatos
+7. Inicie o programa com `python ./main.py` no terminal
+8. Após terminar a raspagem, as screenshots estarão na pasta Pendente;
+9. Ainda no terminal digite `python ./img_to_txt.py` para executar o ORM e salvar a lista em output.txt
